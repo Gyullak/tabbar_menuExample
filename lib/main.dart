@@ -16,6 +16,8 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
   // 컨트롤러는 TabBar와 TabBarView 객체를 생성할 때 직접 전달
   late TabController controller;
 
+
+
   // 객체가 위젯 트리에 추가될 때 호출되는 함수. 즉, 그려지기 전에 탭바 컨트롤러 샛성.
   @override
   void initState(){
@@ -53,10 +55,10 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
             controller: controller,                 // 컨트롤러 연결
             tabs: [
               // 아이콘은 글자 수 같은 걸로 선택. 의미 없음. 제목에 들어간 색상은 중요.
-              Tab(icon: Icon(Icons.card_travel), text: '빨강'),
-              Tab(icon: Icon(Icons.donut_small), text: '초록',),
-              Tab(icon: Icon(Icons.table_chart), text: '파랑'),
-              Tab(icon: Icon(Icons.table_chart), text: '노랑'),
+              Tab(icon: Icon(Icons.card_travel), text: '홈'),
+              Tab(icon: Icon(Icons.donut_small), text: '검색',),
+              Tab(icon: Icon(Icons.table_chart), text: '트렌드'),
+              Tab(icon: Icon(Icons.table_chart), text: '메뉴'),
             ]
         ),
         color: Colors.blueGrey,
